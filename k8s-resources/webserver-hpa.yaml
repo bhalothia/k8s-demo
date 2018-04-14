@@ -1,0 +1,20 @@
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  creationTimestamp: 2018-04-14T13:58:43Z
+  name: webserver
+  namespace: myspace
+  resourceVersion: "4043"
+  selfLink: /apis/autoscaling/v1/namespaces/myspace/horizontalpodautoscalers/webserver
+  uid: f1a92027-3feb-11e8-b9ba-0800271050ed
+spec:
+  maxReplicas: 5
+  minReplicas: 3
+  scaleTargetRef:
+    apiVersion: extensions/v1beta1
+    kind: Deployment
+    name: webserver
+  targetCPUUtilizationPercentage: 80
+status:
+  currentReplicas: 0
+  desiredReplicas: 0
