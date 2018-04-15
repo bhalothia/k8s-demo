@@ -1,0 +1,9 @@
+- name: Creating s3_bucket
+  s3_bucket:
+    name: "{{ bucket_name }}"
+    state: present
+    region: "{{ aws_region }}"
+    versioning: no
+    tags:
+      Name: "{{ bucket_name }}"
+      

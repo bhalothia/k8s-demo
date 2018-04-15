@@ -1,0 +1,4 @@
+---
+cluster_name: apr1.experimental.auto-grid-dev.com
+zones: us-east-1c
+state: s3://apr1.experimental.auto-grid-dev.com

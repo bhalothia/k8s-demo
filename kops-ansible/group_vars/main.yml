@@ -1,0 +1,19 @@
+KOPS_BUCKET=ag-kubernetes-demo
+KOPS_STATE_STORE=
+CLUSTER_NAME=
+VPC_ID=
+NETWORK_CIDR=
+TOPOLOGY=private
+NETWORKING=weave
+ZONE=us-west-2a
+NUM_MASTERS=1
+MASTER_SIZE=m4.large
+NUM_WORKERS=3
+NODE_SIZE=m4.large
+SSH_KEY=
+KUBERNETES_VERSION=1.7.7
+LOADBALANCER_TYPE=internal
+environment:  expt
+bucket_name:  s3-expt
+aws_region: us-east-1
+

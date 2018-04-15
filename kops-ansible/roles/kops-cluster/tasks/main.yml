@@ -1,0 +1,10 @@
+---
+- name: Creating kops cluster
+  shell: kops create cluster --name "{{ cluster_name }}" --zones "{{ zones }}" --state "{{ state }}" --yes
+
+# - name: Kops Updating cluater
+#   shell: "kops update cluster {{ cluster_name }} --yes {{ state }}"
+
+- name: Create the physical cluster
+  shell: "kops update cluster {{ cluster_name }} --yes --state {{ state }}"
+

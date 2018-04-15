@@ -1,0 +1,5 @@
+---
+- hosts: kops
+  connection: local
+  roles:
+    - kubectl-install

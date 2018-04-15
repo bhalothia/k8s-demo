@@ -1,0 +1,7 @@
+---
+- hosts: kops
+  connection: local
+  ignore_errors: yes
+  roles:
+  - kops-cluster
+  
